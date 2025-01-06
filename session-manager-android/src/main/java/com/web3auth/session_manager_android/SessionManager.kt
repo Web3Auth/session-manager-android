@@ -317,7 +317,7 @@ class SessionManager(
                             signature = KeyStoreManager.getECDSASignature(
                                 BigInteger(newSessionKey, 16), gsonData
                             ),
-                            timeout = min(sessionTime, 7 * 86400),
+                            timeout = min(sessionTime, 30 * 86400),
                             allowedOrigin = allowedOrigin,
                             namespace = sessionNamespace
                         )

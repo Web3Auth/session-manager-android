@@ -25,7 +25,7 @@ import kotlin.math.min
 
 class SessionManager(
     context: Context,
-    sessionTime: Int = 86400,
+    sessionTime: Int = 30 * 86400,
     allowedOrigin: String = "*",
     sessionId: String? = null,
     sessionNamespace: String? = null
